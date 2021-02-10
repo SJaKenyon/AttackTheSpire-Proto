@@ -158,8 +158,8 @@ var gdjs;
           }
         } else {
           if (this._isFullscreen) {
-            if (document.documentElement.requestFullScreen) {
-              document.documentElement.requestFullScreen();
+            if (document.documentElement.requestFullscreen) {
+              document.documentElement.requestFullscreen();
             } else {
               if (document.documentElement.mozRequestFullScreen) {
                 document.documentElement.mozRequestFullScreen();
@@ -170,8 +170,8 @@ var gdjs;
               }
             }
           } else {
-            if (document.cancelFullScreen) {
-              document.cancelFullScreen();
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
             } else {
               if (document.mozCancelFullScreen) {
                 document.mozCancelFullScreen();

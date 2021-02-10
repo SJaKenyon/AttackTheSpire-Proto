@@ -40,6 +40,9 @@ var gdjs;
       common2.logicalNegation = function(bool) {
         return !bool;
       };
+      common2.normalize = function(val, min, max) {
+        return min === max ? max : (val - min) / (max - min);
+      };
       common2.clamp = function(x, min, max) {
         return Math.min(Math.max(x, min), max);
       };

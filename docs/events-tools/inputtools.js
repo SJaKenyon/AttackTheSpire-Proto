@@ -135,6 +135,9 @@ var gdjs;
       input2.anyKeyPressed = function(runtimeScene) {
         return runtimeScene.getGame().getInputManager().anyKeyPressed();
       };
+      input2.anyKeyReleased = function(runtimeScene) {
+        return runtimeScene.getGame().getInputManager().anyKeyReleased();
+      };
       input2.isMouseButtonPressed = function(runtimeScene, button) {
         if (button === "Left") {
           return runtimeScene.getGame().getInputManager().isMouseButtonPressed(0);
